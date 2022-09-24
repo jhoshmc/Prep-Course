@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return 'hola'
+  return 'Henry'
   
 }
 
@@ -42,7 +42,8 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return y-x;
+  var r = x-y;
+  return r;
 }
 
 function multiplica(x, y) {
@@ -91,6 +92,10 @@ function menosQueNoventa(num) {
   {
     return true;
   }
+  else
+  {
+    return false;
+  }
 }
 
 function mayorQueCincuenta(num) {
@@ -121,6 +126,10 @@ function esPar(num) {
   {
     return true;
   }
+  else
+  {
+    return false;
+  }
 }
 
 function esImpar(num) {
@@ -130,6 +139,10 @@ function esImpar(num) {
   if(num%2 != 0)
   {
     return true;
+  }
+  else
+  {
+    return false;
   }
 }
 
@@ -202,15 +215,16 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre+apellido;
+  const str3 =nombre+' '+apellido;
+  return str3;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  const string1='Hola';
-  return string1+nombre;
+  const string1='Hola ';
+  return string1+nombre+'!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -249,35 +263,35 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if(letra.length>1)
+  if(letra.length>2)
   {
-    return 'dato incorrecto ';
+    return 'Dato incorrecto';
   }
   else
   {
     switch(letra)
   {
-    case 'a': return 'es voxal';
+    case 'a': return 'Es Vocal';
       break;
-    case 'A': return 'es vocal';
+    case 'A': return 'Es Vocal';
       break;
-    case 'e':return 'es vocal';
+    case 'e': return 'Es Vocal';
       break;
-    case 'E': return 'es vocal';
+    case 'E': return 'Es Vocal';
       break;
-    case 'i':return 'es vocal';
+    case 'i': return 'Es Vocal';
       break;
-    case 'I': return 'es vocal';
+    case 'I': return 'Es Vocal';
       break;
-    case 'o':return 'es vocal';
+    case 'o': return 'Es Vocal';
       break;
-    case 'O':return 'es vocal';
+    case 'O': return 'Es Vocal';
       break;
-    case 'u': return 'es vocal';
+    case 'u': return 'Es Vocal';
       break;
-    case 'U': return 'es vocal';
+    case 'U': return 'Es Vocal';
       break;
-    default: return 'dato incorrecto';    
+    default: return 'Dato incorrecto';    
   }
   }
   
