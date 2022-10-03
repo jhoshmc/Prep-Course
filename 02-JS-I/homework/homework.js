@@ -267,32 +267,12 @@ function esVocal(letra){
   {
     return 'Dato incorrecto';
   }
-  else
+  else if(letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u")
   {
-    switch(letra)
-  {
-    case 'a': return 'Es Vocal';
-      break;
-    case 'A': return 'Es Vocal';
-      break;
-    case 'e': return 'Es Vocal';
-      break;
-    case 'E': return 'Es Vocal';
-      break;
-    case 'i': return 'Es Vocal';
-      break;
-    case 'I': return 'Es Vocal';
-      break;
-    case 'o': return 'Es Vocal';
-      break;
-    case 'O': return 'Es Vocal';
-      break;
-    case 'u': return 'Es Vocal';
-      break;
-    case 'U': return 'Es Vocal';
-      break;
-    default: return 'Dato incorrecto';    
+  return "Es vocal"
   }
+  else{
+    return "Dato incorrecto";
   }
   
 }
